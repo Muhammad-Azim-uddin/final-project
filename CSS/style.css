@@ -404,20 +404,24 @@ color: var(--gren-gray-scale-500);
 /* features section starts here */
 .features{
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: -100px ;
 }
 .features .sec{
   padding: 0;
   border-right: 1px solid var(--branding-success-bright);
+  z-index: 34;
 }
 .features .sec:last-child{
   border: none;
 }
-.features .all{
-  /* outline: 1px solid var(--gray-scale-gray-–-400); */
+.features .all {
+  outline: 1px solid var(--gray-scale-gray-–-50);
   overflow: hidden;
-  box-shadow:  inset 0px 0px 48px 5px rgb(238, 237, 237);
-  transition: 0.3s;
+  transition: 0.3s; 
+  background: white;
+}
+.features .all:hover{
+  box-shadow: -5px 5px 20px 0px rgb(231 220 220);
 }
 .features .all:first-child{
   border-radius: 6px 0 0 6px;
@@ -470,6 +474,7 @@ color: var(--gray-scale-gray-–-900);
 /* product section starts here */
 .products{
   background: var(--gren-gray-scale-50);
+  padding-top: 150px;
 }
 .products h2{
   font-weight: 600;
@@ -488,6 +493,27 @@ color: var(--gray-scale-gray-–-900);
 /* .products .pro-top ul li{
   border-right: 1px solid var(--branding-success);
 } */
+.products .pro-top ul li{
+  position: relative;
+}
+ .products .pro-top ul li::before{
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 2px ;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background: var(--branding-success);
+  transition: all 0.4s ease-in-out;
+ }
+ .products .pro-top ul li:hover::before , .products .pro-top ul li .active::before{
+  width: 90%;
+ }
+ .products .pro-top ul li:hover button{
+  color: #00b207 !important;
+ } 
 .products .pro-top ul li::after{
   content: "";
   display: inline-block;
@@ -501,7 +527,7 @@ color: var(--gray-scale-gray-–-900);
 .products .pro-top ul li:last-child::after{
   width: 0;
 }
-.products .pro-top ul li a{
+.products .pro-top ul li button{
   margin: 0px 24px ;
 }
 .pro-top{
@@ -521,6 +547,21 @@ color: var(--gray-scale-gray-–-900);
 font-size: 16px;
 line-height: 150%;
 color: var(--gren-gray-scale-700);
+}
+.all-pro .all{
+  /* transition: 0.5s !important; */
+  position: relative;
+  transition: 0.2s ease-in-out;
+  overflow: hidden  ;
+}
+.all-pro .all:hover{
+  outline: 1px solid var(--branding-success-dark);
+}
+.all-pro .all .cnt .star{
+  margin: 0;
+}
+.all-pro .all .cnt .star{
+  color: #ffa900 !important; 
 }
 .all-pro .all .cnt p{
   font-weight: 500;
@@ -558,5 +599,80 @@ background: var(--branding-success);
 .all-pro .pro:nth-child(4+n){
   border-bottom: none ;
 }
+.all-pro .all .overlay{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  transform: translateX(100px);
+  transition: 0.3s ease-in-out;
+}
+.all-pro .all:hover .overlay{
+  transform: translateX(0);
+}
+.all-pro .overlay .overlay-content .over1 , .over2{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gren-gray-scale-100);
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.all-pro .overlay .overlay-content .over1 span ,.over2 span{
+  line-height: 10px;
+}
+.all-pro .over-off{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: translateX(-120px );
+  transition: 0.4s ease-in-out;
+  border-radius: 4px;
+  padding: 3px 8px; 
+  height: 27px;
+  background: var(--branding-error);
+}
+.all-pro .over-off .off{
+  color: var(--gray-scale-white) !important;
+}
+.all-pro .all:hover .over-off , .all-pro .all:active .over-off{
+  transform: translateX(0);
+}
 /* product section ends here */
+
+/* banner 2 section starts here */
+.banner2{
+  padding: 100px 0px;
+  background: var(--gray-scale-white);
+}
+.banner2 .banner2-img{
+  position: relative;
+}
+.banner2 .banner2-img .banner2-cnt{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.banner2 .banner2-cnt h2{
+  font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+text-align: justify;
+color: var(--gray-scale-white);
+}
+.banner2 .banner2-cnt p{
+  font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: justify;
+color: rgba(255, 255, 255, 0.8);
+
+}
+.banner2 .banner2-cnt p span{
+  font-weight: 500;
+font-size: 20px;
+color: var(--gray-scale-white);
+}
+/* banner 2 section ends here */
 /* main section ends here */

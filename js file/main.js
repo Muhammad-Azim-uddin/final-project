@@ -15,3 +15,4 @@ $(".ddLink").click(function(){
 $(".dropdown-toggle").click(function(){
     $(".dropdown-menu").toggleClass("active");
 })
+var mixer = mixitup('.mixit');
