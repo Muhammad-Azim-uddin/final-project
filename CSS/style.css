@@ -29,7 +29,30 @@
   --branding-error: #ea4b48;
   --font-family : "Poppins", "arial"
 }
+/* common shop btn */
 
+.shopBtn{
+  line-height: 120%;
+  padding: 8px 20px;
+  border-radius: 43px;
+  background: var(--gray-scale-white);
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  font-family: cursive;
+  transition: 0.3s;
+}
+.shopBtn:hover{
+  background: var(--branding-success);
+}
+.shopBtn .para, .shopBtn iconify-icon{
+  color: var(--branding-success) !important;
+  font-weight:800;
+  font-size: 16px;
+}
+.shopBtn:hover .para , .shopBtn:hover iconify-icon{
+  color: var(--gray-scale-white) !important ;
+}
 /* common css start here */
 * {
   margin: 0;
@@ -54,14 +77,14 @@ p,
 span,
 ol,
 li,
-div {
+div{
   margin: 0;
   padding: 0;
 }
 body {
   font-family: var(--font-family);
 }
-iconify-icon {
+.iconify-icon {
   line-height: 10px !important;
 }
 
@@ -248,6 +271,7 @@ a {
 .dropdown-menu {
   display: none;
   transition: 0.4s;
+  z-index: 36 !important;
 }
 .dropdown-menu.active {
   display: block;
@@ -409,7 +433,7 @@ color: var(--gren-gray-scale-500);
 .features .sec{
   padding: 0;
   border-right: 1px solid var(--branding-success-bright);
-  z-index: 34;
+  /* z-index: 34; */
 }
 .features .sec:last-child{
   border: none;
@@ -553,6 +577,7 @@ color: var(--gren-gray-scale-700);
   position: relative;
   transition: 0.2s ease-in-out;
   overflow: hidden  ;
+  cursor: pointer;
 }
 .all-pro .all:hover{
   outline: 1px solid var(--branding-success-dark);
@@ -582,10 +607,19 @@ color: var(--gren-gray-scale-400);
 padding: 13px;
 width: 50px;
 height: 50px;
+background:var(--gray-scale-white) ;
+outline: 1px solid var(--gray-scale-gray-–-400);
+line-height: 10px;
+transition: 0.3s;
+}
+.all-pro .all .bag:hover{
 background: var(--branding-success);
 }
+.all-pro .all .bag:hover .bag-icon{
+  color: var(--gray-scale-white);
+}
 .all-pro .all .bag .bag-icon{
- color: var(--gray-scale-white);
+ color: var(--branding-success);
 }
 
 .all-pro .pro{
@@ -654,25 +688,135 @@ background: var(--branding-success);
   top: 20px;
   left: 10px;
 }
-.banner2 .banner2-cnt h2{
+.banner2 .banner2-cnt ,.banner-middle .banner2-img .ban-mid-cnt{
+  padding: 2% 0 0  20px;
+}
+
+.banner2 .banner2-cnt h2 , .banner-middle .banner2-img .ban-mid-cnt h2{
   font-weight: 600;
-font-size: 32px;
+font-size: 25px;
 line-height: 120%;
 text-align: justify;
 color: var(--gray-scale-white);
 }
-.banner2 .banner2-cnt p{
+.banner2 .banner2-cnt p, .banner-middle .banner2-img .ban-mid-cnt p{
   font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-text-align: justify;
-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 150%;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.8);
 
 }
-.banner2 .banner2-cnt p span{
+.banner2 .banner2-cnt p span , .banner-middle .banner2-img .ban-mid-cnt span{
   font-weight: 500;
 font-size: 20px;
 color: var(--gray-scale-white);
 }
+.banner-middle {
+
+}
+.banner-middle .banner2-img{
+  position: relative;
+}
+.banner-middle .banner2-img .ban-mid-cnt{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
 /* banner 2 section ends here */
+
+/* mobile device banner 2 */
+.smBan2 .sm-ban{
+  position: relative;
+}
+.smBan2 .sm-ban .sm-ban-cnt{
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.sm-middle{
+  position: relative;
+}
+.sm-middle .sm-ban-cnt {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+/* Deal section */
+
+.deal-section{
+  background: var(--gren-gray-scale-50);  
+}
+.deal-section .sobji{
+  padding: 80px 70px 80px 80px;
+}
+.deal-section .sobji-cnt{
+  padding: 100px 0;
+}
+
+.deal-section .sobji-cnt span{
+  font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+text-align: center;
+color: var(--branding-success);
+}
+
+.deal-section .sobji-cnt h3{
+  font-weight: 600;
+font-size: 35px;
+line-height: 120%;
+text-align: center;
+color: var(--gren-gray-scale-900);
+}
+.deal-section .sobji-cnt .sobji-btn{
+  display: flex;
+  justify-content: center;
+}
+
+/* digital clock section style.. */
+.clock {
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.time-unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 5px 10px;
+  font-size: 30px;
+  color: #4caf50;
+  background-color: transparent;
+  border: 2px solid var(--branding-success-bright);
+}
+
+.time-label {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* feature 2 section */
+
+.feature2{
+  background: var(--gray-scale-white);
+  padding: 100px 0;
+}
+.feature2 .h2{
+  font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gren-gray-scale-900);
+margin-bottom: 50px;
+}
 /* main section ends here */
