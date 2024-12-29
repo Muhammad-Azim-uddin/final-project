@@ -1,8 +1,13 @@
 $(document).ready(function() {
-    $('.featuredProducts').slick({
+    // $('.featuredProducts').slick({
+      $('.slick').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 3,
+        // slidesToShow: 4,
+        // slidesToScroll: 3,
         responsive: [
             {
               breakpoint: 1024,
@@ -66,6 +71,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock(); 
 
-new VenoBox({
-  selector: 'veno',
-});
+  new VenoBox({
+    selector: '.veno',
+    autoplay: true,
+  });
