@@ -22,6 +22,62 @@
   #drinks{
     padding: 20px 0;
   }
+  #feedback .cd{
+    position: relative;
+    margin-bottom: 30px !important;
+  }
+  #news-section .news-card{
+    margin-bottom: 15px;
+   }
+  #footer  .footer-top h4{
+    font-size: 14px;
+  }
+  #footer .footer-top input{
+    padding: 10px 10px;
+    font-size: 12;
+  }
+  #footer .footer-top input::placeholder{
+    /* font-size: 12px; */
+    visibility: hidden;
+  }
+  #footer .footer-top button{      
+    padding: 12px 10px;
+    font-size: 12px;
+    height: 46px;
+  }
+  #footer-bottom{
+    margin-top: 20px;
+  }
+  #footer-bottom .footer-group{
+    padding: 16px 0;
+  }
+  #footer-bottom h4{
+    font-size: 14px;
+  }
+  #footer-bottom .footer-group h5{
+  font-size: 14px;
+  margin-bottom: 8px;
+  }
+  #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+  font-size: 8px;
+  margin-bottom: 8px;
+  }
+  #footer-bottom .footer-group .contact{
+    margin-top: 10px;
+  }
+  #footer-bottom .footer-group .contact span{
+    font-size: 10px;
+  }
+  #footer-bottom .footer-group .contact a{
+    font-size: 10px;
+  } 
+  .copy-right{
+    padding-bottom: 10px;
+  }
+  .copy-right .media span{
+    width: 30px;
+    height: 30px;
+  }  
 }
 
 
@@ -48,9 +104,62 @@
       #drinks{
         padding: 50px 0;
       }
+      #feedback{
+        height: auto;
+      }
       #feedback .cd{
+        position: relative;
         margin-bottom: 20px !important;
       }
+      #news-section .news-card{
+        margin-bottom: 15px;
+       }
+       #footer  .footer-top h4{
+        font-size: 14px;
+      }
+      #footer .footer-top input{
+        padding: 12px 16px;
+      }
+      #footer .footer-top input::placeholder{
+        font-size: 16px;
+      }
+      #footer .footer-top button{      
+        padding: 12px 16px;
+        height: 50px;
+      }
+      #footer-bottom{
+        margin-top: 25px;
+      }
+      #footer-bottom .footer-group{
+        padding: 20px 0;
+      }
+      #footer-bottom h4{
+        font-size: 14px;
+      }
+      #footer-bottom .footer-group h5{
+      font-size: 14px;
+      margin-bottom: 10px;
+      }
+      #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+      font-size: 10px;
+      margin-bottom: 8px;
+      }
+      #footer-bottom .footer-group .contact{
+        margin-top: 10px;
+      }
+      #footer-bottom .footer-group .contact span{
+        font-size: 10px;
+      }
+      #footer-bottom .footer-group .contact a{
+        font-size: 10px;
+      } 
+      .copy-right{
+        padding-bottom: 20px;
+      }
+      .copy-right .media span{
+        width: 40px;
+        height: 40px;
+      }  
 }
 
 
@@ -109,8 +218,63 @@
     #drinks{
       padding: 50px 0;
     }
-    
-  }
-  @media (max-width:  1199px){
+    #feedback{
+      height: auto;
+    }
+    #feedback .cd{
+      position: relative;
+      margin-bottom: 30px !important;
+    }
+    #news-section .news-card{
+     margin-bottom: 15px;
+    }
 
+    /* footer section here */
+    #footer  .footer-top h4{
+      font-size: 14px;
+    }
+    #footer .footer-top input{
+      padding: 12px 16px;
+    }
+    #footer .footer-top input::placeholder{
+      font-size: 16px;
+    }
+    #footer .footer-top button{      
+      padding: 12px 16px;
+      height: 50px;
+    }
+    #footer-bottom{
+      margin-top: 25px;
+    }
+    #footer-bottom .footer-group{
+      padding: 20px 0;
+    }
+    #footer-bottom h4{
+      font-size: 14px;
+    }
+    #footer-bottom .footer-group h5{
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+    #footer-bottom .footer-group p , #footer-bottom .footer-group li a{
+    font-size: 10px;
+    margin-bottom: 8px;
+    }
+    #footer-bottom .footer-group .contact{
+      margin-top: 10px;
+    }
+    #footer-bottom .footer-group .contact span{
+      font-size: 10px;
+    }
+    #footer-bottom .footer-group .contact a{
+      font-size: 10px;
+    } 
+    .copy-right{
+      padding-bottom: 20px;
+    }
+    .copy-right .media span{
+      width: 40px;
+      height: 40px;
+    }  
   }
+

@@ -71,7 +71,22 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock(); 
 
-  new VenoBox({
-    selector: '.veno',
-    autoplay: true,
+  // new VenoBox({
+  //   selector: '.veno',
+  //   autoplay: true,
+  // });
+
+  // pop up video player
+  $(document).ready(function() {
+    $('.popup-vimeo').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+  
+      fixedContentPos: false
+    });
   });
+
+  
