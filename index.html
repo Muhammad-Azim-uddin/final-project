@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoBazar</title>
-     <!-- *Swipper Cdn -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- *Swipper Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/bootstrap file/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/slick.css">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
 
-<body>
+<body class="pe-0">
     <header>
         <!-- Header Top SECTION -->
         <section id="headerTop">
@@ -106,7 +106,7 @@
 
         <!--mobile header middle section -->
         <section class="mobileHeaderMiddle d-block d-lg-none">
-            <div class="row align-items-center justify-content-center m-0 py-3">
+            <div class="row align-items-center justify-content-center m-0 py-2">
                 <div class="col-3 text-center">
                     <a data-bs-toggle="offcanvas" role="button" href="#sidebar" class="text-dark">
                         <span class="iconify-icon">
@@ -154,7 +154,7 @@
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                         <a href="./index.html"><img src="./images/Logo (1).png">
                     </h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    <button class="btn-close" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -188,7 +188,7 @@
         <!-- header middle part ends here -->
 
         <!-- header bottom section starts here.  -->
-        <section class="header-bottom d-none d-lg-block">
+        <section id="header-bottom" class="header-bottom d-none d-lg-block">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-3 d-flex align-items-center relative">
@@ -225,7 +225,7 @@
                             <div class="d-flex align-items-center justify-content-end">
                                 <span style="line-height: 5px; margin-right: 5px;" class="iconify-icon"><iconify-icon
                                         icon="mdi:add-call" width="20" height="20"></iconify-icon></span>
-                                <span>+002457814</span>
+                                <a href="tel:+002457814"><span>+002457814</span></a>
                             </div>
                         </a>
                     </div>
@@ -317,13 +317,7 @@
                 <div class="container">
                     <h2>Introducing Our Products</h2>
                     <div class="pro-top">
-                        <ul class="d-flex">
-                            <!-- <li><a href="#"><button class="border-0 " data-filter="all" type="button">All</button>  </a></li>
-                            <li><a href="#"><button class="border-0 " data-filter=".Fruit" type="button">Fruit</button> </a></li>
-                            <li><a href="#"><button class="border-0 " data-filter=".Vegitable" type="button">Vegitable</button> </a></li>
-                            <li><a href="#"><button class="border-0 " data-filter=".Meat&Fish" type="button">Meat & Fish</button> </a></li>
-                            <li><a href="#"><button class="border-0 " data-filter=".ViewAll" type="button">View All</button> </a></li> -->
-
+                        <ul class="d-flex justify-content-center align-items-center">
                             <!-- mixit try -->
                             <li><button class="border-0 " data-filter="all" type="button">All</button></li>
                             <li><button class="border-0 " data-filter=".Fruit" type="button">Fruit</button></li>
@@ -337,9 +331,10 @@
                         <div class="row mixit">
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="1">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100 w-100" src="./images/Image (1).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100 w-100" src="./images/Image (1).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -361,8 +356,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center ">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -385,9 +382,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="2">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -409,8 +407,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -435,7 +435,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
                                             alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -457,8 +457,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -483,7 +485,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid"
                                             src="./images/Product Image.png" alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -505,8 +507,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -529,9 +533,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="5">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -553,8 +558,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -577,9 +584,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="6">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -601,8 +609,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -627,7 +637,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
                                             alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -649,8 +659,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -675,7 +687,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid"
                                             src="./images/Product Image.png" alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -697,8 +709,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -721,9 +735,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="9">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -769,9 +784,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="10">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -793,8 +809,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -819,7 +837,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
                                             alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -841,8 +859,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -867,7 +887,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid"
                                             src="./images/Product Image.png" alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -889,8 +909,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -913,9 +935,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="13">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -937,8 +960,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -961,9 +986,10 @@
                             </div>
                             <div class="col-lg-3 col-6 pro p-0 mix Fruit" data-order="14">
                                 <div class="all ">
-                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                    <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png"
+                                            alt="">
                                     </div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -985,8 +1011,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -1011,7 +1039,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid" src="./images/Image (3).png"
                                             alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -1033,8 +1061,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -1059,7 +1089,7 @@
                                 <div class="all ">
                                     <div class="img-div bg-white"><img class="img-fluid"
                                             src="./images/Product Image.png" alt=""></div>
-                                    <div class="row justify-content-between align-items-center px-4 cnt m-0">
+                                    <div class="row justify-content-between align-items-center  px-2 px-lg-4 cnt m-0">
                                         <div class=" col-8 p-0">
                                             <h4>Green Apple</h4>
                                             <p>$14.99<span class="ms-2">$20.99</span> </p>
@@ -1081,8 +1111,10 @@
                                                     height="20"></iconify-icon>
                                             </span>
                                         </div>
-                                        <div class="col-4 p-0 bag d-flex justify-content-center align-items-center">
-                                            <span><iconify-icon class="bag-icon" icon="ph:bag-light" width="35"
+                                        <div class="col-4  ">
+                                            <span
+                                                class="bag d-flex justify-content-center align-items-center"><iconify-icon
+                                                    class="bag-icon" icon="ph:bag-light" width="35"
                                                     height="35"></iconify-icon></span>
                                         </div>
                                     </div>
@@ -1110,7 +1142,7 @@
             </section>
             <!-- banner section -->
 
-           <section class="banner-bottom" id="drinks">
+            <section class="banner-bottom" id="drinks">
 
 
                 <div class="container">
@@ -1123,7 +1155,8 @@
                                     <a href="#">
                                         <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
                                             type="button"> <span> Shop Now</span> <span><iconify-icon
-                                                    icon="tabler:arrow-right" width="24" height="24"></iconify-icon></span>
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
                                         </button>
                                     </a>
                                 </div>
@@ -1134,10 +1167,11 @@
                                 <div class=" content">
                                     <h2 class="text-dark text-end"> 100% Fresh <br> Cow Milk </h2>
                                     <p class="text-dark text-end">Starting at <span class="text-dark">$14.99</span></p>
-                                    <a href="#" >
+                                    <a href="#">
                                         <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
                                             type="button"> <span> Shop Now</span> <span><iconify-icon
-                                                    icon="tabler:arrow-right" width="24" height="24"></iconify-icon></span>
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
                                         </button>
                                     </a>
                                 </div>
@@ -1151,7 +1185,8 @@
                                     <a href="#">
                                         <button class="shopBTN d-flex justify-content-center  align-items-center gap-1"
                                             type="button"> <span> Shop Now</span> <span><iconify-icon
-                                                    icon="tabler:arrow-right" width="24" height="24"></iconify-icon></span>
+                                                    icon="tabler:arrow-right" width="24"
+                                                    height="24"></iconify-icon></span>
                                         </button>
                                     </a>
                                 </div>
@@ -1159,12 +1194,12 @@
                         </div>
                     </div>
                 </div>
-            </section> 
-           
+            </section>
+
             <!-- banner section ends here -->
 
-             
-             
+
+
 
 
             <!-- best deal section -->
@@ -1223,7 +1258,8 @@
                     <div class="row slick">
                         <div class=" col-md  pro p-0 mix slider Fruit" data-order="1">
                             <div class="all ">
-                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt=""></div>
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (1).png" alt="">
+                                </div>
                                 <div class="row justify-content-between align-items-center px-4 cnt m-0">
                                     <div class=" col-8 p-0">
                                         <h4>Green Apple</h4>
@@ -1270,7 +1306,8 @@
                         </div>
                         <div class=" col-md  pro p-0 mix slider Fruit">
                             <div class="all ">
-                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt=""></div>
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image (2).png" alt="">
+                                </div>
                                 <div class="row justify-content-between align-items-center px-4 cnt m-0">
                                     <div class=" col-8 p-0">
                                         <h4>Green Apple</h4>
@@ -1317,7 +1354,8 @@
                         </div>
                         <div class=" col-md  pro p-0 mix slider Fruit">
                             <div class="all ">
-                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 6.png" alt=""></div>
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 6.png" alt="">
+                                </div>
                                 <div class="row justify-content-between align-items-center px-4 cnt m-0">
                                     <div class=" col-8 p-0">
                                         <h4>Green Apple</h4>
@@ -1364,7 +1402,8 @@
                         </div>
                         <div class=" col-md  pro p-0 mix slider Fruit">
                             <div class="all ">
-                                <div class="img-div"><img class="img-fluid w-100" src="./images/image 5.png" alt=""></div>
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/image 5.png" alt="">
+                                </div>
                                 <div class="row justify-content-between align-items-center px-4 cnt m-0">
                                     <div class=" col-8 p-0">
                                         <h4>Green Apple</h4>
@@ -1411,7 +1450,8 @@
                         </div>
                         <div class=" col-md  pro p-0 mix slider Fruit">
                             <div class="all ">
-                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 7.png" alt=""></div>
+                                <div class="img-div"><img class="img-fluid w-100" src="./images/Image 7.png" alt="">
+                                </div>
                                 <div class="row justify-content-between align-items-center px-4 cnt m-0">
                                     <div class=" col-8 p-0">
                                         <h4>Green Apple</h4>
@@ -1466,13 +1506,17 @@
             <section id="feedback">
                 <div class="container">
                     <h2>What our Clients Says</h2>
-                    <div class="row gx-4">
+                    <div class="row ">
                         <div class="col-lg-4 col-md-6 col-12 p-0">
                             <div class="cd">
                                 <div class="cd-body text-center bg-white">
-                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;" src="./images/Vector.png" alt=""></span>
-                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies ele. ”</p>
-                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24" height="24"></iconify-icon></span>
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
                                 </div>
                                 <div class="cd-footer bg-transparent border-top-0 text-center">
                                     <div class="client-img">
@@ -1486,9 +1530,13 @@
                         <div class="col-lg-4 col-md-6 col-12 p-0">
                             <div class="cd">
                                 <div class="cd-body text-center bg-white">
-                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;" src="./images/Vector.png" alt=""></span>
-                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies ele. ”</p>
-                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24" height="24"></iconify-icon></span>
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
                                 </div>
                                 <div class="cd-footer bg-transparent border-top-0 text-center">
                                     <div class="client-img">
@@ -1502,9 +1550,13 @@
                         <div class="col-lg-4 col-md-6 col-12 p-0">
                             <div class="cd">
                                 <div class="cd-body text-center bg-white">
-                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;" src="./images/Vector.png" alt=""></span>
-                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem laoreet ultricies ele. ”</p>
-                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24" height="24"></iconify-icon></span>
+                                    <span class="text-center"><img style="height: 32px; width: 40px; margin-top: 32px;"
+                                            src="./images/Vector.png" alt=""></span>
+                                    <p>“Aenean et nisl eget eros consectetur vestibulum vel id erat. Aliquam feugiat
+                                        massa dui. Sed sagittis diam sit amet ante sodales semper. Aliquam commodo lorem
+                                        laoreet ultricies ele. ”</p>
+                                    <span><iconify-icon icon="iconamoon:arrow-down-2-thin" width="24"
+                                            height="24"></iconify-icon></span>
                                 </div>
                                 <div class="cd-footer bg-transparent border-top-0 text-center">
                                     <div class="client-img">
@@ -1521,17 +1573,18 @@
             <!-- feedback section ends here -->
 
             <!-- video sec st -->
-            <section id="video-section">
+            <!-- <section id="video-section">
                 <div class="container">
                     <div class="row">
                         <div class="pop-video">
-                            <a class="popup-vimeo" href="https://www.youtube.com/embed/qQY9Y8kK5eI?si=XQwT5-7zuc8TkW9d" title="YouTube video player">
+                            <a class="popup-vimeo" href="https://www.youtube.com/embed/qQY9Y8kK5eI?si=XQwT5-7zuc8TkW9d"
+                                title="YouTube video player">
                                 <img class="img-fluid" src="./images/thumbnail.png" alt="">
                             </a><br>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- video sec end -->
 
             <!-- news section starts here -->
@@ -1544,7 +1597,7 @@
                                 <img class="img-fluid" src="./images/news1.png" alt="">
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 text-center" >
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
                             <div class="news-card ">
                                 <img class="img-fluid w-100" src="./images/news1.png" alt="">
                             </div>
@@ -1569,7 +1622,7 @@
             <hr>
             <div class="container">
                 <div class="footer-top">
-                   <div class="row justify-content-center align-items-center ">
+                    <div class="row justify-content-center align-items-center ">
                         <div class="col-3">
                             <a href="#home"><img class="img-fluid" src="./images/Logo (1).png" alt=""></a>
                         </div>
@@ -1579,9 +1632,9 @@
                         </div>
                         <div class="col-5 subscribe">
                             <input type="text" placeholder="your email address ">
-                            <button type="submit">Subscribe</button>
+                            <button id="subscribe" type="submit">Subscribe</button>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div id="footer-bottom">
@@ -1589,38 +1642,45 @@
                     <div class="row footer-group justify-content-center">
                         <div class="col-4">
                             <h5>About Shopery</h4>
-                            <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec. </p>
-                            <div class="contact">
-                                <a href="tel:+(219) 555-0114">(219) 555-0114</a>
-                                <span> or </span>
-                                <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
-                            </div>
+                                <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+                                    magna congue nec. </p>
+                                <div class="contact">
+                                    <a href="tel:+(219) 555-0114">(219) 555-0114</a>
+                                    <span> or </span>
+                                    <a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a>
+                                </div>
                         </div>
-                        <div class="col"><h5>My contacts</h5>
+                        <div class="col">
+                            <h5>My contacts</h5>
                             <ul>
                                 <li><a href="">My Account</a></li>
                                 <li><a href="">Order History</a></li>
-                                <li><a href="" >Shopping Cart</a></li>
+                                <li><a href="">Shopping Cart</a></li>
                                 <li><a href="">Wishlist</a></li>
                                 <li><a href="">Settings</a></li>
                             </ul>
                         </div>
-                        <div class="col"><h5>Helps</h5>
+                        <div class="col">
+                            <h5>Helps</h5>
                             <ul>
                                 <li><a href="">Contacts</a></li>
                                 <li><a href="">Faqs</a></li>
-                                <li><a href="" >Terms & Condition</a></li>
+                                <li><a href="">Terms & Condition</a></li>
                                 <li><a href="">Privacy Policy</a></li>
-                            </ul>    </div>
-                        <div class="col d-none d-lg-inline-block"><h5>Proxy</h5>
+                            </ul>
+                        </div>
+                        <div class="col d-none d-lg-inline-block">
+                            <h5>Proxy</h5>
                             <ul>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#shop">Shop</a></li>
-                                <li><a href="#product" >Product</a></li>
+                                <li><a href="#product">Product</a></li>
                                 <li><a href="">Products details</a></li>
                                 <li><a href="">Track Order</a></li>
-                            </ul></div>
-                        <div class="col-3 d-none d-lg-inline-block"><h5>Instagram</h5>
+                            </ul>
+                        </div>
+                        <div class="col-3 d-none d-lg-inline-block">
+                            <h5>Instagram</h5>
                             <div class="row image">
                                 <div class="col-3">
                                     <a href="#"><img src="./images/insta  img1.png" alt=""></a><br>
@@ -1632,24 +1692,29 @@
                                 </div>
                                 <div class="col-3">
                                     <a href="#"><img src="./images/insta img3.png" alt=""></a>
-                                    <a href="#"><img src="./images/insta img3.png" alt=""></a></div>
+                                    <a href="#"><img src="./images/insta img3.png" alt=""></a>
+                                </div>
                                 <div class="col-3">
                                     <a href="#"><img src="./images/insta img4.png" alt=""></a>
                                     <a href="#"><img src="./images/insta img4.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                     <div class="copy-right">
                         <div class="container">
                             <div class="row justify-content-center align-items-center">
                                 <div class="col-3">
                                     <div class="media">
-                                        <span><iconify-icon icon="ri:facebook-fill" width="30" height="30"></iconify-icon></span>
-                                        <span><iconify-icon icon="ri:twitter-fill" width="30" height="30"></iconify-icon></span>
-                                        <span><iconify-icon icon="ri:pinterest-fill" width="30" height="30"></iconify-icon></span>
-                                        <span><iconify-icon icon="ri:instagram-fill" width="30" height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:facebook-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:twitter-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:pinterest-fill" width="30"
+                                                height="30"></iconify-icon></span>
+                                        <span><iconify-icon icon="ri:instagram-fill" width="30"
+                                                height="30"></iconify-icon></span>
                                     </div>
                                 </div>
                                 <div class="col-5 text-center">
@@ -1668,9 +1733,17 @@
                 </div>
             </div>
         </section>
-
-
         <!-- footer section  ends here  -->
+
+
+        <!-- back to top button -->
+        <button id="backToTop" title="Go to top">
+            <span class="iconify-icon">
+                <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+            </span>
+        </button>
+
+
 
         <!-- links here.. -->
         <script src="./js file/bootstrap.bundle.min.js"></script>
@@ -1687,7 +1760,5 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="./js file/main.js"></script>
 </body>
-
-</html>
 
 </html>

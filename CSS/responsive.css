@@ -1,6 +1,43 @@
 @media (max-width:  576px) {
+  #headerTop p span {
+    /* font-size: 14px; */
+  }
+  #headerTop p {
+    font-weight: 400;
+    font-size:12px ;
+  }
+  .deal-section .sobji{
+    padding: 10px 40px 40px 30px;
+  }
+  .deal-section .sobji-cnt{
+    padding: 40px 0;
+  }
+  .deal-section .sobji-cnt h3 {
+    font-size: 30px;
+}
+.features .row .cnt{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.features .row .cnt p{
+font-size: 15px;
+}
+.features .row .cnt span{
+  font-size: 10px;
+}
+.all-pro .all .bag, .feature2 .all .bag {
+  border-radius: 50%;
+  padding: 13px;
+  width: 40px;
+  height: 40px;
+  outline: 1px solid var(--gray-scale-gray-–-400);
+}
   .products h2{
     font-size: 25px;
+  }
+  .products .pro-top ul{
+    gap: 0px;
+    margin-top: 10px;
   }
  .pro-top ul li button{
     margin: 0px 8px;
@@ -22,12 +59,31 @@
   #drinks{
     padding: 20px 0;
   }
+  #feedback{
+    padding-top: 50px;
+  }
+  #feedback h2{
+    font-size: 30px;
+  }
   #feedback .cd{
     position: relative;
     margin-bottom: 30px !important;
+    margin-right: 0;
+  }
+  #video-section{
+
+    /* overflow: auto; */
+  }
+  #video-section .pop-video{
+    margin: 0;
+  }
+  #news-section h2{
+    margin-bottom: 30px;
+    font-size: 30px;
   }
   #news-section .news-card{
     margin-bottom: 15px;
+    margin-right: 0;
    }
   #footer  .footer-top h4{
     font-size: 14px;
@@ -78,15 +134,22 @@
     width: 30px;
     height: 30px;
   }  
+  #backToTop{
+    bottom: 70px;
+    right: 10px;
+  }
 }
 
-
 @media (min-width: 577px) and (max-width: 768px){
+  .products .pro-top ul li button{
+    margin: 0px 10px ;
+    font-size: 14px;
+  }
     .deal-section .sobji{
-      padding: 20px 70px 80px 80px;
+      padding: 20px 40px 40px 30px;
     }
     .deal-section .sobji-cnt{
-      padding: 80px 0;
+      padding: 70px 0;
     }
     .main-first .text h2{
       font-weight: 600;
@@ -110,9 +173,11 @@
       #feedback .cd{
         position: relative;
         margin-bottom: 20px !important;
+        margin-right: 0;
       }
       #news-section .news-card{
         margin-bottom: 15px;
+        margin-right: 0;
        }
        #footer  .footer-top h4{
         font-size: 14px;
@@ -160,6 +225,10 @@
         width: 40px;
         height: 40px;
       }  
+      #backToTop{
+        bottom: 70px;
+        right: 10px;
+      }
 }
 
 
@@ -224,6 +293,7 @@
     #feedback .cd{
       position: relative;
       margin-bottom: 30px !important;
+      margin-right: 0;
     }
     #news-section .news-card{
      margin-bottom: 15px;
@@ -276,5 +346,9 @@
       width: 40px;
       height: 40px;
     }  
+    #backToTop{
+      bottom: 70px;
+      right: 10px;
+    }
   }
 

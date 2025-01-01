@@ -88,5 +88,39 @@ updateClock();
       fixedContentPos: false
     });
   });
-
+  let subscribe = document.querySelector("#subscribe");
+  subscribe.addEventListener("click" , function(){
+      if (subscribe.style.backgroundColor === "green") {
+            subscribe.style.backgroundColor = "red";
+            alert("Unsubscribed")
+  } else {
+  subscribe.style.backgroundColor = "green";
+  alert("Subscribed")
+}
+})
+  let scrollPosition = document.documentElement.scrollTop;
+  let headerHeight = document.querySelector("#header-bottom").offsetHeight;
+  window.addEventListener('scroll', function() {
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollPosition > headerHeight+400) {
+      document.querySelector("#header-bottom").classList.add("sticky");
+      } else {
+        document.querySelector("#header-bottom").classList.remove("sticky");
+    }
+  })
   
+
+  let backToTop = document.querySelector("#backToTop");
+  window.addEventListener("scroll", function(){
+    let scrollPosition = document.documentElement.scrollTop;
+    if (scrollPosition > 500) {
+      backToTop.style.display = "block";
+      backToTop.style.right = "20px";
+    }
+    else {
+      backToTop.style.display = "none";
+    }
+  });
+  backToTop.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
