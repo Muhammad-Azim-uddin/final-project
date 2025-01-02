@@ -15,29 +15,60 @@
 <body>
     <div id="navbar-placeholder"></div>
     <main>
-        <div class="container">
-            <div id="top-sec">
-                <a href="../index.html"><span class="iconify-icon">
-                        <iconify-icon icon="material-symbols:home-outline-rounded" width="24"
-                            height="24"></iconify-icon>
-                    </span></a>
-                <a href="#">Account</a>
-                <a href="#">Login</a>
+        <div id="top-sec">
+            <div class="container">
+                <span class="d-flex justify-content-start align-items-center gap-3">
+                    <a href="../index.html"><span class="iconify-icon">
+                            <iconify-icon icon="material-symbols:home-outline-rounded" width="24"
+                                height="24"></iconify-icon>
+                        </span></a>
+                    <a href="#">Account</a>
+                    <a href="#">Login</a>
+                </span >
             </div>
+        </div>
+        <div class="container">
 
             <div class="signup-container">
-                <div>
-                    <h2>Signup</h2>
-                    <form action="/submit_signup" method="post">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-                        <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                        <button type="submit">Signup</button>
+                <div class="login">
+                    <h2 class="text-center">Signup</h2>
+                    <form action="/submit_signup" method="post">                     
+                        <input type="email" id="email" name="email" required placeholder="Email">      
+                        <div class="pass">
+                            <input type="password" id="password-signup" name="password" required placeholder="Password">
+                            <span class="eye-icon" data-target="password-signup" ><iconify-icon icon="clarity:eye-show-line" width="36" height="36"></iconify-icon></span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <input type="checkbox" name="rememberMe" id="rememberMe" value="rememberMe">
+                                <label for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#">Forget Password?</a>
+                        </div>
+                        <button id="button" type="submit">Signup</button>
+                        <div class="text-center mt-3">
+                            <span>Don't have an account?</span>
+                            <a href="#" id="go-to-reg">Register</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="register-container ">
+                <div class="registration">
+                    <h2>Register</h2>
+                    <form action="/submit_register" method="post">
+                        <input type="text" id="username" name="username" required placeholder="Username">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                        <div class="pass">
+                            <input type="password" id="password-register" name="password" required placeholder="Password">
+                            <span class="eye-icon" data-target="password-register" ><iconify-icon icon="clarity:eye-show-line" width="36" height="36"></iconify-icon></span>
+                        </div>
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password">
+                        <button id="button" type="submit">Register</button>
+                        <div class="text-center mt-3">
+                            <span>Already have an account?</span>
+                            <a href="#" id="go-to-login">Login</a>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -56,6 +87,45 @@
             $("#navbar-placeholder").load("navbar.html");
             $("#footer-placeholder").load("footer.html");
         });
+
+        // Password Show/Hide
+        // let eyeIcon = document.querySelector('.eye-icon');
+        // let password = document.querySelector('#password');
+        // eyeIcon.addEventListener('click', function() {
+        //     alert('clicked');
+        //     if (password.type === 'password') {
+        //         password.type = 'text';
+        //         eyeIcon.innerHTML = '<iconify-icon icon="clarity:eye-show-line" width="36" height="36"></iconify-icon>';
+        //     } else {
+        //         password.type = 'password';
+        //         eyeIcon.innerHTML = '<iconify-icon icon="clarity:eye-hide-line" width="36" height="36"></iconify-icon>';
+        //     }
+        // })
+
+        document.querySelectorAll('.eye-icon').forEach(function(eyeIcon) {
+        eyeIcon.addEventListener('click', function() {
+            let password = document.getElementById(eyeIcon.getAttribute('data-target'));
+            if (password.type === 'password') {
+                password.type = 'text';
+                eyeIcon.innerHTML = '<iconify-icon icon="clarity:eye-hide-line" width="36" height="36"></iconify-icon>';
+            } else {
+                password.type = 'password';
+                eyeIcon.innerHTML = '<iconify-icon icon="clarity:eye-show-line" width="36" height="36"></iconify-icon>';
+            }
+        });
+    });
+    let goToReg= document.getElementById('go-to-reg');
+    let goToLogin = document.getElementById('go-to-login');
+    let signupContainer= document.querySelector('.signup-container');
+    let registerContainer= document.querySelector('.register-container');
+    goToReg.addEventListener('click', function(){
+        signupContainer.style.display = 'none';
+        registerContainer.style.display = 'flex';
+    });
+    goToLogin.addEventListener('click', function(){
+        signupContainer.style.display = 'flex';
+        registerContainer.style.display = 'none';
+    });
     </script>
 </body>
 
