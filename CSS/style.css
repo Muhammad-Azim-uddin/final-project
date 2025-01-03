@@ -31,6 +31,9 @@
 }
 /* common shop btn */
 
+*{
+  scroll-behavior: smooth;
+}
 .shopBtn{
   line-height: 120%;
   padding: 8px 20px;
@@ -1188,3 +1191,21 @@ color: var(--gren-gray-scale-500);
 #backToTop span iconify-icon{
   transform: rotate(180deg);
 }
+
+/* onload section starts here */
+
+#onload{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--gray-scale-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+} 
+#onload img{
+
+}    

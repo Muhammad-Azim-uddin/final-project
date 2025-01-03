@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-cart</title>
+    <link rel="stylesheet" href="../CSS/bootstrap file/bootstrap.min.css">
+    <link rel="shortcut icon" href="../images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../other css file/shopping-cart.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <div id="top-sec">
+            <div class="container">
+                <span class="d-flex justify-content-start align-items-center gap-3">
+                    <a href="../index.html"><span class="iconify-icon">
+                            <iconify-icon icon="material-symbols:home-outline-rounded" width="24" height="24"></iconify-icon>
+                        </span></a>
+                    <a href="#">Shopping-cart</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cart-cnt">
+                <h2 class="text-center">My Shopping Cart</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 cart-box order-0 ">
+                        <div class="row align-items-center">
+                            <div class="col-5"><span id="cart-head">PRODUCT</span></div>
+                            <div class="col-3 col-lg-1 text-center"><span id="cart-head">PRICE</span></div>
+                            <div class="col-4 col-lg-2 text-center"><span id="cart-head">QUANTITY</span></div>
+                            <div class="d-none d-lg-block col-lg-4 text-center"><span id="cart-head">SUBTOTAL</span></div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="col-5 m-0 p-0 p-lg-2 row justify-content-center align-items-center">
+                                
+                                    <div class="col-6"><img class="product-img " src="../images/image 5.png" alt=""></div>
+                                    <div class="col-6"><span>Capsicum</span></div>
+                                
+                            </div>
+                            <div class="col-3 col-lg-1 text-center"><span id="price">50$</span></div>
+                            <div class="col-4  col-lg-2 text-center">
+                                <div id="quantity" class="d-flex text-center justify-content-between align-items-center">
+                                    <button>+</button>
+                                    <span id="quantity-num" class="text-center" value="1">1</span>
+                                    <button>-</button>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-4 text-center"><span id="total">50$</span></div>
+                        </div>
+                        <hr>
+                        <div class="row align-items-center">
+                            <div class="col-5 m-0 p-0 p-lg-2 row justify-content-center align-items-center">
+                                
+                                <div class="col-6 "><img class="product-img" src="../images/Image (3).png" alt=""></div>
+                                <div class="col-6 "><span>Red Tomato</span></div>
+                            
+                            </div>
+                            <div class="col-3 col-lg-1 text-center"><span id="price">50$</span></div>
+                            <div class="col-4 col-lg-2 text-center">
+                                <div id="quantity" class="d-flex justify-content-between align-items-center">
+                                    <button>+</button>
+                                    <span id="quantity-num" class="text-center" value="1">1</span>
+                                    <button>-</button>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-4 text-center"><span id="total">50$</span></div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between buttons align-items-center">
+                            <a href="#">
+                                <button>Return to shop </button>
+                            </a>
+                            <a href="#">
+                                <button>Update Cart</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 order-1 order-lg-2 m-auto">
+                        <div class="cart-total ">
+                            <h2 class="text-center">Cart Total</h2>
+                            <div class="total">
+                                <div class="d-flex justify-content-between ">
+                                    <span>Subtotal</span>
+                                    <span>100$</span>
+                                </div>
+                                <div class="d-flex justify-content-between ">
+                                    <span>Shipping</span>
+                                    <span>Free</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-0 shadow-none">
+                                    <span>Total</span>
+                                    <span class="final">100$</span>
+                                </div>
+                                <button>
+                                    Proceed to Checkout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js file/bootstrap.bundle.min.js"></script>
+    <script src="../js file/jquery-3.7.1.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="../js file/main.js"></script>
+    <script>
+        // jQuery দিয়ে Navbar এবং Footer Load করা
+        $(function () {
+            $("#navbar-placeholder").load("navbar.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>

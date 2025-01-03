@@ -124,3 +124,13 @@ updateClock();
   backToTop.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  
+  let loader = document.querySelector(".loader");
+  let onload = document.querySelector("#onload");
+  
+  window.addEventListener("load", function() {
+    loader.style.display = "none";
+    onload.style.display = "none";
+
+});
