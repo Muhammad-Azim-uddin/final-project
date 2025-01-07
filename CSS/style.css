@@ -247,10 +247,13 @@ a {
 .down-menu {
   width: 100%;
   background: var(--gray-scale-gray-–-50);
-  padding: 15px;
+  padding: 15px 15px 0;
   position: fixed;
   animation: anim 0.4s both 0.1s;
   z-index: 31;
+}
+.down-menu .iconify-icon a iconify-icon{
+  color: var(--gray-scale-gray-–-900);
 }
 @keyframes anim {
   0% {
@@ -276,6 +279,7 @@ a {
   color: var(--gray-scale-gray-–-800);
   margin: 5px 0;
   display: inline-block;
+  font-weight: 600;
 }
 .dropdown-menu {
   display: none;
@@ -285,6 +289,10 @@ a {
 .dropdown-menu.active {
   display: block;
   position: relative;
+}
+/* off canvas */
+.offcanvas-body ul li a{
+  border-bottom: var(--gray-scale-gray-–-100);
 }
 /* header middle part ends here  */
 
@@ -1206,6 +1214,3 @@ color: var(--gren-gray-scale-500);
   align-items: center;
   z-index: 1000;
 } 
-#onload img{
-
-}    
