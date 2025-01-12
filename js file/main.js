@@ -134,3 +134,21 @@ updateClock();
     onload.style.display = "none";
 
 });
+
+// pop up video 
+// *  popup close
+$(".close-btn").click(function () {
+  $(".popup").addClass("d-none");
+});
+
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".popup").removeClass("d-none");
+    $(".popup").addClass("d-block");
+  }, 2000);
+});
+
+
+new VenoBox({
+  selector: '.videoHome',
+});

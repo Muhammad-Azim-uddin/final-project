@@ -7,15 +7,14 @@
     <title>EcoBazar</title>
     <!-- *Swipper Cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/bootstrap file/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/slick.css">
     <!-- VenoBox CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css">
+    <link rel="stylesheet" href="./CSS/venobox.min.css">
 
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="magnific-popup/magnific-popup.css"> -->
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
 </head>
@@ -108,7 +107,7 @@
         <section class="mobileHeaderMiddle d-block d-lg-none">
             <div class="row align-items-center justify-content-center m-0 py-2">
                 <div class="col-3 text-center">
-                    <a data-bs-toggle="offcanvas"  role="button" href="#sidebar" class="text-dark">
+                    <a data-bs-toggle="offcanvas" role="button" href="#sidebar" class="text-dark">
                         <span class="iconify-icon">
                             <iconify-icon icon="heroicons-solid:menu-alt-1" width="20" height="20"></iconify-icon>
                         </span>
@@ -165,8 +164,7 @@
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                         <a href="./index.html"><img src="./images/Logo (1).png">
                     </h5>
-                    <button class="btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                    <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div>
@@ -177,7 +175,8 @@
                                         id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                         Shop
                                     </button>
-                                    <ul class="dropdown-menu border-0 border-bottom" aria-labelledby="dropdownMenuButton">
+                                    <ul class="dropdown-menu border-0 border-bottom"
+                                        aria-labelledby="dropdownMenuButton">
                                         <li><a class="dropdown-item" href="#">Alu</a></li>
                                         <li><a class="dropdown-item" href="#">Tomato</a></li>
                                         <li><a class="dropdown-item" href="#">Green chili</a></li>
@@ -1597,6 +1596,48 @@
             </section> -->
             <!-- video sec end -->
 
+            <!-- popup video -->
+            <section id="video">
+                <div class="container">
+                    <div class="row">
+                        <a class="videoHome" data-autoplay="true" data-vbtype="video"
+                            href="https://www.youtube.com/watch?v=zep0sZs7JNA"><img class="img-fluid vid"
+                                src="./images/thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- *Popup Box Start -->
+            <!-- <section id="popup" class="popup d-none">
+                <div class="popup2">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="close-btn text-end"><iconify-icon icon="radix-icons:cross-2"></iconify-icon>
+                            </div>
+                            <div class="col-lg-5 col mt-3">
+                                <img class="img-fluid" src="./images/thumbnail.png" alt="">
+                            </div>
+                            <div class="col-lg-7 col text-center popText">
+                                <h3>Subcribe to Our Newsletter</h3>
+                                <p class="sub">Subscribe to our newlletter and Save your <span>20% money</span> with
+                                    discount code
+                                    today.</p>
+                                <div class="subscribe d-flex">
+                                    <input type="email" placeholder="Enter your email address">
+                                    <button>Subscribe</button>
+                                </div>
+                                <div class="dontShow d-flex justify-content-center align-items-center mt-4 mb-2">
+                                    <input type="checkbox">
+                                    <p>Don't show this popup again</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- *Popup Box End -->
+
+
             <!-- news section starts here -->
             <section id="news-section">
                 <div class="container">
@@ -1754,9 +1795,9 @@
         </button>
 
         <!-- back to top button ends here -->
-         <div id="onload">
+        <div id="onload">
             <img class="loader" src="./images/loader.gif" alt="">
-         </div>
+        </div>
 
 
         <!-- links here.. -->
@@ -1764,9 +1805,9 @@
         <script src="./js file/jquery-3.7.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
         <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- VenoBox JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+        <script src="./js file/venobox.min.js"></script>
 
         <!-- Magnific Popup core JS file -->
         <script src="magnific-popup/jquery.magnific-popup.js"></script>
