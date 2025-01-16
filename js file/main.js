@@ -1,3 +1,4 @@
+// ...............................feature section slick slider starts here ................................
 $(document).ready(function() {
     // $('.featuredProducts').slick({
       $('.slick').slick({
@@ -32,11 +33,10 @@ $(document).ready(function() {
                 slidesToScroll: 1
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
       });
+
+      // ...............................feature section slick slider end ................................
       
     $('.parent').click(function() {
         $('.sub-nav').toggleClass('visible');
@@ -56,7 +56,7 @@ $(".dropdown-toggle").click(function(){
 })
 var mixer = mixitup('.mixit');
 
-// --digital clock.. 
+// --...........................digital clock..............................
 function updateClock() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
@@ -70,24 +70,9 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock(); 
+//................................ clock end here..............................
 
-  // new VenoBox({
-  //   selector: '.veno',
-  //   autoplay: true,
-  // });
-
-  // pop up video player
-  $(document).ready(function() {
-    $('.popup-vimeo').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
-  
-      fixedContentPos: false
-    });
-  });
+//................................ subscribe popup ..............................
   let subscribe = document.querySelector("#subscribe");
   subscribe.addEventListener("click" , function(){
       if (subscribe.style.backgroundColor === "green") {
@@ -98,18 +83,23 @@ updateClock();
   alert("Subscribed")
 }
 })
+// .................................subscribe popup end here..............................
+
+//................................. header sticky section below..............................
   let scrollPosition = document.documentElement.scrollTop;
   let headerHeight = document.querySelector("#header-bottom").offsetHeight;
   window.addEventListener('scroll', function() {
     let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollPosition > headerHeight+400) {
+    if (scrollPosition > headerHeight+600) {
       document.querySelector("#header-bottom").classList.add("sticky");
       } else {
         document.querySelector("#header-bottom").classList.remove("sticky");
     }
   })
-  
 
+  //............................... header sticky section end here..............................
+  
+// ..................................back to top bar starts here ................................
   let backToTop = document.querySelector("#backToTop");
   window.addEventListener("scroll", function(){
     let scrollPosition = document.documentElement.scrollTop;
@@ -124,9 +114,11 @@ updateClock();
   backToTop.addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
+// ..................................back to top bar ends here ................................
   
-  let loader = document.querySelector(".loader");
+
+// ..................................loader starts here ................................
+let loader = document.querySelector(".loader");
   let onload = document.querySelector("#onload");
   
   window.addEventListener("load", function() {
@@ -135,11 +127,13 @@ updateClock();
 
 });
 
-// pop up video 
-// *  popup close
+// ..................................loader ends here ................................
+
+//................................... pop up video ................................... 
 $(".close-btn").click(function () {
   $(".popup").addClass("d-none");
 });
+// *...................................  popup close..................................
 
 $(window).on("load", function () {
   setTimeout(function () {
@@ -152,3 +146,43 @@ $(window).on("load", function () {
 new VenoBox({
   selector: '.videoHome',
 });
+
+// ......................................slick banner starts here ................................ 
+
+$(document).ready(function(){
+  $('.slick-banner').slick({
+    dots: true,         
+    infinite: true,     
+    speed: 300,         
+    slidesToShow: 1,    
+    slidesToScroll: 1,  
+    autoplay: true,     
+    autoplaySpeed: 2000,
+    arrows: true,       
+    fade: false,      
+    prevArrow: '<button type="button" class="slick-prev"><</button>',
+    nextArrow: '<button type="button" class="slick-next">></button>'     
+  });
+});
+  // ...............................slick banner end ................................
+
+  // .......................................wow js starts here ..................
+ 
+  // let wow = new wow({
+      // boxClass:     'wow', 
+      // animateClass: 'animate__bounceInUp',
+      // offset:       0,   
+      // mobile:       true,
+      // live:         true,
+      // callback:     function(box) {
+      // },
+      // scrollContainer: null,    
+      // resetAnimation: true,
+    // });
+  // wow.init();
+//  });
+
+// .......................................wow js ends here ..................
+
+
+		

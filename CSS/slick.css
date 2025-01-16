@@ -2,7 +2,6 @@
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
 
@@ -21,10 +20,8 @@
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     margin: 0;
     padding: 0;
 }
@@ -61,7 +58,6 @@
 .slick-track:after
 {
     display: table;
-
     content: '';
 }
 .slick-track:after
@@ -77,7 +73,6 @@
 {
     display: none;
     float: left;
-
     height: 100%;
     min-height: 1px;
 }
@@ -108,11 +103,64 @@
 .slick-vertical .slick-slide
 {
     display: block;
-
     height: auto;
-
     border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+/* my code */
+.slick-prev, .slick-next {
+    background:  #84d18793 !important;
+    border: none;
+    color: #28a745;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;       
+  }
+  
+  .slick-prev {
+    left: -35px;           
+    /* top: 40%;
+    transform: translateY(-50%); */
+}
+  
+  .slick-next {
+    right: -35px;      
+  }
+  
+  .slick-dots {
+    text-align: center;    /* ডট সেন্টারে রাখুন */
+    margin-top: 20px;      /* ডট স্লাইডার থেকে নিচে রাখুন */
+    display: flex;         /* ফ্লেক্সবক্স ব্যবহার করে সেন্টার করুন */
+    justify-content: center;
+    background: none;      /* ব্যাকগ্রাউন্ড রিমুভ */
+}
+
+.slick-dots li {
+    margin: 0 5px;         /* ডটের মধ্যে কিছু ফাঁক রাখুন */
+}
+
+.slick-dots li button {
+    background: transparent; /* বাটনের ব্যাকগ্রাউন্ড রিমুভ করুন */
+    border: none;            /* বাটনের বর্ডার রিমুভ করুন */
+    padding: 0;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 25px;
+    color: #7a8a7d;
+    content: '●';   
+    opacity: 0.5;   
+}
+
+.slick-dots li.slick-active button:before {
+    color: #28a745;        /* অ্যাক্টিভ ডটের রঙ */
+    opacity: 1;            /* অ্যাক্টিভ ডট সম্পূর্ণ দৃশ্যমান */
 }

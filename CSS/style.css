@@ -309,7 +309,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
@@ -885,6 +885,7 @@ margin-bottom: 50px;
   z-index: 10;
   border: 1px solid var(--gray-scale-gray-–-100);
   font-size: 0px;
+  background: var(--branding-success-bright);
 }
 .slick .slick-arrow:focus{
   background: var(--branding-success-bright);
@@ -986,29 +987,11 @@ line-height: 150%;
 text-align: center;
 color: var(--gren-gray-scale-500);
 }
-/* Feedback section end */
-/* veno video section start */
+/* .................................... Feedback section end ................................*/
 
-/* #video-section{
-  margin-bottom: 100px;
-}
-#video-section .container{
-  position: relative;
-}
-#video-section .pop-video{
-  height: 700px;
-  width: 100%;
-}
-#video-section .popup-vimeo{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -50%;
-} */
-/* veno video section end */
 
-/* popup/ venobox video starts here */
-/* *Video   START HERE */
+
+/* **************************          popup/ venobox video starts here ********************** */
 #video img {
   transform: translateY(-50%);
   cursor: pointer;
@@ -1023,47 +1006,9 @@ color: var(--gren-gray-scale-500);
   transform: translate(-50%, -90%);
 }
 
-/* *Video   ENDS HERE */
+/*  *******************************************Video   ENDS HERE ************************************************ */ 
 
-
-/* *Popup box Start Here */
-/* #popup {
-  width: 100%;
-  height: 100vh;
-  background: rgb(128, 128, 128, 0.5);
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-#popup .popup2 {
-  position: fixed;
-  width: 872px;
-  height: 400px;
-  box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.12);
-  background: #fff;
-  animation: popupIn 0.3s ease forwards;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-}
-@keyframes popupIn {
-  0% {
-     left: 50%;
-        top: 50%;
-        transform: translateY(-100%); 
-    opacity: 0;
-  }
-    
-  100% {
-     left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    opacity: 1;
-  }
-}
-   */
-
+/* 
 #popup .close-btn {
   position: absolute;
   top: 10px;
@@ -1122,7 +1067,7 @@ color: var(--gren-gray-scale-500);
   color: #fff;
   position: absolute;
   right: 50px;
-} */
+} */ 
 
 /* *Popup End Here */
 
@@ -1337,3 +1282,10 @@ color: var(--gren-gray-scale-500);
   align-items: center;
   z-index: 1000;
 } 
+
+
+/* scroll animation */
+
+.animate__animated {
+  --animate-duration: 2s;
+}
